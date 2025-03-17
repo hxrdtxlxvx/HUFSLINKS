@@ -19,7 +19,6 @@ h1#title, figure, ul#links {
 }
 
 figure {
-    background-image: url('main_boo.jpg');
     background-size: cover;
     width: 300px;
     height: 300px;
