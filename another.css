@@ -1,5 +1,19 @@
 @charset "utf-8";
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+@font-face {
+    font-family: 'HUFSFont';
+    src: url('./TTF/한국외대체B.ttf') format('truetype');
+}
+
+@media (max-width: 600px) {
+    h1#title {
+        font-size: 1.5rem; /* 작은 화면에서 타이틀 크기 축소 */
+    }
+  
+    ul#links a {
+        font-size: 1rem; /* 작은 화면에서 링크 크기 축소 */
+    }
+}
 
 * {
     margin: 0;
@@ -8,7 +22,7 @@
 }
 
 body {
-    font-family: "Noto Sans KR", sans-serif;
+    font-family: sans-serif;
     text-align: center;  /* 텍스트 중앙 정렬 */
 }
 
@@ -27,7 +41,7 @@ figure {
 }
 
 h1 {
-    font-family: "Noto Sans KR", serif;
+    font-family: 'HUFSFont';
     font-weight: normal;
     font-style: normal;
     font-size: 2rem;
@@ -48,14 +62,4 @@ ul#links a {
     text-decoration: none;
     color: #333;
     font-size: 1.2rem;
-}
-
-@media (max-width: 600px) {
-    h1#title {
-        font-size: 1.5rem; /* 작은 화면에서 타이틀 크기 축소 */
-    }
-  
-    ul#links a {
-        font-size: 1rem; /* 작은 화면에서 링크 크기 축소 */
-    }
 }
