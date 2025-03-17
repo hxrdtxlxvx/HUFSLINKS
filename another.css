@@ -1,8 +1,13 @@
 @charset "utf-8";
 
 @font-face {
-    font-family: 'HUFSFont';
-    src: url('./TTF/한국외대체B.ttf') format('truetype');
+    font-family: 'HUFSFontM';
+    src: url('./hufsfont/TTF/한국외대체M.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'HUFSFontL';
+    src: url('./hufsfont/TTF/한국외대체L.ttf') format('truetype');
 }
 
 @media (max-width: 600px) {
@@ -22,7 +27,7 @@
 }
 
 body {
-    font-family: sans-serif;
+    font-family: 'HUFSFontL';
     text-align: center;  /* 텍스트 중앙 정렬 */
 }
 
@@ -41,7 +46,7 @@ figure {
 }
 
 h1 {
-    font-family: 'HUFSFont';
+    font-family: 'HUFSFontM';
     font-weight: normal;
     font-style: normal;
     font-size: 2rem;
